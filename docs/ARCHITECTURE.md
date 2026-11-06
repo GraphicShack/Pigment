@@ -503,7 +503,24 @@ plus le téléversement des photos vers Supabase Storage.
 
 ---
 
-## 10. Vérification à chaque étape
+## 10. Ce qu'il faudra installer ou créer, et quand
+
+Rien n'est nécessaire pour l'instant. Choix par défaut retenus : les recommandations du § 9.
+
+| Quand | Quoi | Coût |
+|---|---|---|
+| Étape 1 (pour essayer l'app) | Sur l'ordinateur : **Node.js LTS** et **Git** (ou GitHub Desktop), puis récupérer le projet | Gratuit |
+| Étape 1 | Sur le téléphone : l'app **Expo Go** (App Store / Play Store) | Gratuit |
+| Étape 2 ou plus tard | Tes vraies données de peintures, au format du modèle CSV fourni | — |
+| Étape 7 | Un compte **Supabase** (projet gratuit) ; le README expliquera chaque clic | Gratuit |
+| Étape 8 | Un compte **Expo** (expo.dev) pour EAS Build / Update | Gratuit (offre de base) |
+| Étape 8, iPhone uniquement | Un compte **Apple Developer** | 99 $/an |
+| Étape 8 | Les logos des marques dans `assets/brands/` | — |
+
+Le bundle id reste `com.example.pigment` jusqu'à l'étape 8. Il peut changer librement jusqu'au
+premier build iOS, mais plus ensuite.
+
+## 11. Vérification à chaque étape
 
 Depuis cet environnement (cloud, sans téléphone) je peux vérifier : `tsc --noEmit`, ESLint, Jest,
 et le **bundling complet** iOS/Android (`expo export`), ce qui attrape la majorité des erreurs de
